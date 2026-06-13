@@ -1,60 +1,36 @@
-import './style.css'
-import javascriptLogo from './assets/javascript.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import { setupCounter } from './counter.js'
+import './style.css';
+const targetDate = new Date(2026, 7, 15, 8, 0, 0).getTime();
 
-document.querySelector('#app').innerHTML = `
-<section id="center">
-  <div class="hero">
-    <img src="${heroImg}" class="base" width="170" height="179">
-    <img src="${javascriptLogo}" class="framework" alt="JavaScript logo"/>
-    <img src="${viteLogo}" class="vite" alt="Vite logo" />
-  </div>
-  <div>
-    <h1>Get started</h1>
-    <p>Edit <code>src/main.js</code> and save to test <code>HMR</code></p>
-  </div>
-  <button id="counter" type="button" class="counter"></button>
-</section>
+const updateCountdown = () => {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
 
-<div class="ticks"></div>
+  const countdownContainer = document.getElementById('countdown');
 
-<section id="next-steps">
-  <div id="docs">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
-    <ul>
-      <li>
-        <a href="https://vite.dev/" target="_blank">
-          <img class="logo" src="${viteLogo}" alt="" />
-          Explore Vite
-        </a>
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-          <img class="button-icon" src="${javascriptLogo}" alt="">
-          Learn more
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div id="social">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#social-icon"></use></svg>
-    <h2>Connect with us</h2>
-    <p>Join the Vite community</p>
-    <ul>
-      <li><a href="https://github.com/vitejs/vite" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#github-icon"></use></svg>GitHub</a></li>
-      <li><a href="https://chat.vite.dev/" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#discord-icon"></use></svg>Discord</a></li>
-      <li><a href="https://x.com/vite_js" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#x-icon"></use></svg>X.com</a></li>
-      <li><a href="https://bsky.app/profile/vite.dev" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#bluesky-icon"></use></svg>Bluesky</a></li>
-    </ul>
-  </div>
-</section>
+  if (distance < 0) {
+    countdownContainer.innerHTML = '<span class="text-2xl font-bold text-rose-600">Zaczynamy przygodę! 🎉</span>';
+    return;
+  }
 
-<div class="ticks"></div>
-<section id="spacer"></section>
-`
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  countdownContainer.innerHTML = `
+    <div class="flex flex-col bg-rose-50 rounded-xl p-3 w-20 shadow-sm border border-rose-100">
+      <span class="text-3xl font-bold">${days}</span>
+      <span class="text-[10px] text-rose-400 uppercase tracking-wider font-semibold mt-1">Dni</span>
+    </div>
+    <div class="flex flex-col bg-rose-50 rounded-xl p-3 w-20 shadow-sm border border-rose-100">
+      <span class="text-3xl font-bold">${hours}</span>
+      <span class="text-[10px] text-rose-400 uppercase tracking-wider font-semibold mt-1">Godz.</span>
+    </div>
+    <div class="flex flex-col bg-rose-50 rounded-xl p-3 w-20 shadow-sm border border-rose-100">
+      <span class="text-3xl font-bold">${minutes}</span>
+      <span class="text-[10px] text-rose-400 uppercase tracking-wider font-semibold mt-1">Min.</span>
+    </div>
+  `;
+};
 
-setupCounter(document.querySelector('#counter'))
+
+setInterval(updateCountdown, 1000);
+updateCountdown(); 
