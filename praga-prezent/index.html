@@ -3,62 +3,253 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>wycieczka do pragi (w celu rekreacyjnym...)</title>
+  <title>wycieczka do pragi❤️</title>
 </head>
 <body class="bg-stone-100 text-stone-800 font-sans antialiased">
   
   <main class="max-w-md mx-auto min-h-screen bg-white shadow-xl relative overflow-hidden">
     
-    <header class="bg-rose-100 p-10 text-center rounded-b-[2.5rem] shadow-sm relative">
-      <h1 class="text-4xl font-bold text-rose-900 mb-2 tracking-tight">Praga</h1>
-      <p class="text-rose-700 font-medium">Nasz wspólny wyjazd</p>
+    <header class="p-12 text-center rounded-b-[2.5rem] shadow-md relative overflow-hidden bg-[url('/bg-praga.jpg')] bg-cover bg-center">
+      
+      <div class="absolute inset-0 bg-stone-900/40"></div>
+      
+      <div class="relative z-10">
+        <h1 class="text-5xl font-bold text-white mb-2 tracking-tight drop-shadow-md">Praga</h1>
+        <p class="text-rose-100 font-medium tracking-wide drop-shadow-sm">W celach CZYSTO rekreacyjnych...❤️</p>
+      </div>
     </header>
 
     <section class="p-8 text-center mt-2">
       <h2 class="text-xs uppercase tracking-widest text-stone-400 mb-6 font-semibold">Do wyjazdu zostało:</h2>
+      <div id="countdown" class="flex justify-center gap-3 text-rose-600"></div>
       
-      <div id="countdown" class="flex justify-center gap-3 text-rose-600">
-        <p class="text-sm text-stone-400 animate-pulse">Ładowanie licznika...</p>
+      <div class="mt-7 inline-block bg-rose-100 text-rose-800 px-6 py-2.5 rounded-full font-bold text-sm tracking-widest uppercase shadow-sm">
+        Roadtrip
       </div>
     </section>
     <section class="px-8 py-4">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-lg font-bold text-stone-800">Baza wypadowa</h3>
-        <span class="text-xs bg-rose-100 text-rose-700 px-2 py-1 rounded-full font-bold">Auto</span>
-      </div>
+      <h3 class="text-lg font-bold text-stone-800 mb-4">Nasz rydwan</h3>
       
-      <div class="bg-white border border-stone-100 shadow-sm rounded-2xl p-4 flex gap-4 items-start">
-        <div class="bg-stone-50 p-3 rounded-xl">
-          <svg class="w-6 h-6 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-          </svg>
-        </div>
-        <div>
-          <h4 class="font-bold text-stone-700">Hotel (TBD)</h4>
-          <p class="text-sm text-stone-500 mt-1">Czeka na wybór. Wymagany parking dla naszego auta!</p>
-          <a href="#" class="text-xs text-rose-500 font-medium mt-2 inline-block">Zobacz na mapie &rarr;</a>
+      <div class="bg-white border border-stone-100 shadow-sm rounded-2xl overflow-hidden flex flex-col">
+        
+        <div class="h-48 w-full bg-stone-200 relative">
+      
+      <div class="bg-white border border-stone-100 shadow-sm rounded-2xl overflow-hidden flex flex-col">
+        
+        <div class="h-48 w-full bg-stone-200 relative">
+          <img src="/auto.jpg" alt="Nasze auto" class="w-full h-full object-cover" />
+          
+          <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded-md uppercase tracking-wider font-semibold">
+            Kierunek: Czechy
+          </div>
         </div>
       </div>
     </section>
+    <div class="space-y-3">
+        <h4 class="text-xs font-bold text-stone-400 uppercase tracking-widest pl-1 mt-2">Nocleg do wyboru:</h4>
+        
+        <div class="bg-white border border-stone-100 shadow-sm rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute top-0 right-0 bg-rose-100 text-rose-800 text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+            Opcja 1
+          </div>
+          
+          <div class="flex gap-4 items-start mb-4">
+            <div class="bg-rose-50 p-3 rounded-xl shrink-0">
+              <svg class="w-6 h-6 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-stone-700 pr-12">Prokop Boutique Hotel</h4>
+              <p class="text-sm text-stone-500 mt-1">Stylowy, nowoczesny obiekt na Žižkowie. Świetny design i doskonała baza wypadowa blisko klimatycznych miejsc.</p>
+            </div>
+          </div>
+          
+          <a href="https://www.booking.com/hotel/cz/prokop-boutique-praha-3.pl.html?aid=1610693&checkin=2026-08-15&checkout=2026-08-18&group_adults=2&no_rooms=1" target="_blank" class="w-full text-center bg-stone-50 hover:bg-rose-50 text-stone-600 hover:text-rose-700 py-3 rounded-xl text-xs font-bold border border-stone-100 transition-colors shadow-sm">
+            Zobacz na Booking.com &rarr;
+          </a>
+        </div>
 
+        <div class="bg-white border border-stone-100 shadow-sm rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute top-0 right-0 bg-stone-100 text-stone-600 text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+            Opcja 2
+          </div>
+          
+          <div class="flex gap-4 items-start mb-4">
+            <div class="bg-rose-50 p-3 rounded-xl shrink-0">
+              <svg class="w-6 h-6 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-stone-700 pr-12">Hotel Ariston Prague</h4>
+              <p class="text-sm text-stone-500 mt-1">Klasyczny, elegancki klimat w tej samej tradycyjnej dzielnicy. Komfortowe pokoje idealne na odpoczynek po całym dniu chodzenia.</p>
+            </div>
+          </div>
+          
+          <a href="https://www.booking.com/hotel/cz/ariston.pl.html?aid=1610693&checkin=2026-08-15&checkout=2026-08-18&group_adults=2&no_rooms=1" target="_blank" class="w-full text-center bg-stone-50 hover:bg-rose-50 text-stone-600 hover:text-rose-700 py-3 rounded-xl text-xs font-bold border border-stone-100 transition-colors shadow-sm">
+            Zobacz na Booking.com &rarr;
+          </a>
+        </div>
+
+        <div class="bg-white border border-stone-100 shadow-sm rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute top-0 right-0 bg-stone-100 text-stone-600 text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-wider">
+            Opcja 3
+          </div>
+          
+          <div class="flex gap-4 items-start mb-4">
+            <div class="bg-rose-50 p-3 rounded-xl shrink-0">
+              <svg class="w-6 h-6 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-stone-700 pr-12">Hotel Aida</h4>
+              <p class="text-sm text-stone-500 mt-1">Położony w spokojnej okolicy z pięknym widokiem na Pragę. Bardzo blisko stacji metra, która dowozi bezpośrednio do centrum w kilka minut.</p>
+            </div>
+          </div>
+          
+          <a href="https://www.booking.com/hotel/cz/aida.pl.html?aid=1610693&checkin=2026-08-15&checkout=2026-08-18&group_adults=2&no_rooms=1" target="_blank" class="w-full text-center bg-stone-50 hover:bg-rose-50 text-stone-600 hover:text-rose-700 py-3 rounded-xl text-xs font-bold border border-stone-100 transition-colors shadow-sm">
+            Zobacz na Booking.com &rarr;
+          </a>
+        </div>
+
+      </div>
+    <section class="px-8 py-2 mb-6">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-bold text-stone-800">Mapa rewiru</h3>
+          <span class="text-xs bg-rose-100 text-rose-700 px-2 py-1 rounded-full font-bold">Nawigacja</span>
+        </div>
+        
+        <div class="bg-white border border-stone-100 shadow-sm rounded-2xl overflow-hidden flex flex-col">
+          
+          <div class="w-full h-64 bg-stone-200">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163935.5332560824!2d14.33149591465223!3d50.05966955074218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2sPraga%2C%20Czechy!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          
+          <div class="p-5">
+            <div class="flex gap-4 items-start mb-4">
+              <div class="bg-rose-50 p-3 rounded-xl shrink-0">
+                <svg class="w-6 h-6 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-stone-700">Zapisane punkty</h4>
+                <p class="text-sm text-stone-500 mt-1">Kliknij, żeby od razu odpalić nawigację na telefonie:</p>
+              </div>
+            </div>
+
+            <div class="space-y-2 mt-4">
+              <a href="https://maps.google.com/?cid=8438139580447011110" target="_blank" class="flex items-center justify-between p-3 bg-stone-50 rounded-xl border border-stone-100 hover:bg-rose-50 transition-colors group">
+                <span class="text-sm font-bold text-stone-700">🌉 Most Karola</span>
+                <span class="text-xs text-rose-500 font-bold group-hover:translate-x-1 transition-transform">Trasa →</span>
+              </a>
+              
+              <a href="https://maps.google.com/?cid=4492723383020968992" target="_blank" class="flex items-center justify-between p-3 bg-stone-50 rounded-xl border border-stone-100 hover:bg-rose-50 transition-colors group">
+                <span class="text-sm font-bold text-stone-700">🍻 Klub Karlovy Lázně</span>
+                <span class="text-xs text-rose-500 font-bold group-hover:translate-x-1 transition-transform">Trasa →</span>
+              </a>
+
+              <a href="https://maps.google.com/?cid=2121303215579930796" target="_blank" class="flex items-center justify-between p-3 bg-stone-50 rounded-xl border border-stone-100 hover:bg-rose-50 transition-colors group">
+                <span class="text-sm font-bold text-stone-700">🍺 U Vystřelenýho oka (Pub)</span>
+                <span class="text-xs text-rose-500 font-bold group-hover:translate-x-1 transition-transform">Trasa →</span>
+              </a>
+
+              <a href="https://maps.google.com/?cid=16147656972049086178" target="_blank" class="flex items-center justify-between p-3 bg-stone-50 rounded-xl border border-stone-100 hover:bg-rose-50 transition-colors group">
+                <span class="text-sm font-bold text-stone-700">🍖 Lokál Dlouhááá (Klasyk)</span>
+                <span class="text-xs text-rose-500 font-bold group-hover:translate-x-1 transition-transform">Trasa →</span>
+              </a>
+
+              <a href="https://maps.google.com/?cid=5463690623326756850" target="_blank" class="flex items-center justify-between p-3 bg-stone-50 rounded-xl border border-stone-100 hover:bg-rose-50 transition-colors group">
+                <span class="text-sm font-bold text-stone-700">🍻 U Fleků (Browar 500 lat)</span>
+                <span class="text-xs text-rose-500 font-bold group-hover:translate-x-1 transition-transform">Trasa →</span>
+              </a>
+
+              <a href="https://maps.google.com/?q=Karl%C3%ADn,+Prague" target="_blank" class="flex items-center justify-between p-3 bg-stone-50 rounded-xl border border-stone-100 hover:bg-rose-50 transition-colors group mt-2">
+                <span class="text-sm font-bold text-stone-700">☕ Kawiarnie Karlín</span>
+                <span class="text-xs text-rose-500 font-bold group-hover:translate-x-1 transition-transform">Trasa →</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
     <section class="px-8 py-6 mt-2 rounded-t-[2.5rem] bg-stone-50 border-t border-stone-100 h-full">
       <h3 class="text-lg font-bold text-stone-800 mb-6">Nasz harmonogram</h3>
       
-      <div class="space-y-4">
-        <div class="bg-white p-4 rounded-2xl shadow-sm border border-stone-100">
-          <h4 class="font-bold text-rose-900">Dzień 1: Przyjazd i Stare Miasto</h4>
-          <p class="text-sm text-stone-500 mt-1">Spacer po moście Karola, powitalna kolacja.</p>
-        </div>
+      <div id="itinerary" class="space-y-3">
         
-        <div class="bg-white p-4 rounded-2xl shadow-sm border border-stone-100 opacity-50">
-          <h4 class="font-bold text-stone-600">Dzień 2: Hradczany</h4>
-          <p class="text-sm text-stone-400 mt-1">Wielkie zwiedzanie i park Letna.</p>
+        <div class="bg-white border border-stone-100 rounded-2xl overflow-hidden shadow-sm">
+          <button class="w-full px-4 py-4 text-left font-bold text-rose-900 flex justify-between items-center day-toggle">
+            <span>Dzień 1: Rekonesans terenu </span>
+            <svg class="w-5 h-5 transition-transform duration-200 transform text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="px-4 pb-4 text-sm text-stone-600 hidden day-content">
+            <ul class="space-y-3 mt-1 border-l-2 border-rose-100 pl-3">
+              <li><strong>Popołudnie:</strong> Zameldowanie w hotelu, zostawienie auta.</li>
+              <li><strong>Późne popołudnie:</strong> Spacer na Stare Miasto (Rynek, Zegar Orloj).</li>
+              <li><strong>Wieczór:</strong> Kolacja w jakiejś fajnej restauracji, zachlanie na mieście i totalny rozpierdol.</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="bg-white border border-stone-100 rounded-2xl overflow-hidden shadow-sm">
+          <button class="w-full px-4 py-4 text-left font-bold text-rose-900 flex justify-between items-center day-toggle">
+            <span>Dzień 2: Coś tam se zobaczymy nie?</span>
+            <svg class="w-5 h-5 transition-transform duration-200 transform text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="px-4 pb-4 text-sm text-stone-600 hidden day-content">
+            <ul class="space-y-3 mt-1 border-l-2 border-rose-100 pl-3">
+              <li><strong>Rano:</strong> Pusty Most Karola po śniadaniu.</li>
+              <li><strong>Przedpołudnie:</strong> Przejście na Malą Stranę i Hradczany.</li>
+              <li><strong>Wieczór:</strong> Letenské sady - 1,2 (przecinek jest silent) piw z widokiem na mosty.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white border border-stone-100 rounded-2xl overflow-hidden shadow-sm">
+          <button class="w-full px-4 py-4 text-left font-bold text-rose-900 flex justify-between items-center day-toggle">
+            <span>Dzień 3: Piwo i trochę chillowania </span>
+            <svg class="w-5 h-5 transition-transform duration-200 transform text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="px-4 pb-4 text-sm text-stone-600 hidden day-content">
+            <ul class="space-y-3 mt-1 border-l-2 border-rose-100 pl-3">
+              <li><strong>Rano:</strong> Spokojny spacer po Wyszehradzie (Vyšehrad).</li>
+              <li><strong>Popołudnie:</strong> Jakieś piwo w dzielnicy Karlín lub Vinohrady.</li>
+              <li><strong>Wieczór:</strong> Rejs po rzece akurat na zachód (z piwem).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white border border-stone-100 rounded-2xl overflow-hidden shadow-sm">
+          <button class="w-full px-4 py-4 text-left font-bold text-rose-900 flex justify-between items-center day-toggle">
+            <span>Dzień 4: Ostatnie Czeskie śniadanie i rura do domu</span>
+            <svg class="w-5 h-5 transition-transform duration-200 transform text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="px-4 pb-4 text-sm text-stone-600 hidden day-content">
+            <ul class="space-y-3 mt-1 border-l-2 border-rose-100 pl-3">
+              <li><strong>Rano:</strong> Śniadanie na luzie i jakieś pamiątki.</li>
+              <li><strong>Przedpołudnie:</strong> Krótki spacer po centrum.</li>
+              <li><strong>Popołudnie:</strong> Rura do domu.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
     </main>
 
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>

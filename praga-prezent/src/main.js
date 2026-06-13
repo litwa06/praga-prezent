@@ -34,3 +34,19 @@ const updateCountdown = () => {
 
 setInterval(updateCountdown, 1000);
 updateCountdown(); 
+const dayToggles = document.querySelectorAll('.day-toggle');
+
+dayToggles.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const content = toggle.nextElementSibling;
+    const icon = toggle.querySelector('svg');
+
+    content.classList.toggle('hidden');
+    
+    if (content.classList.contains('hidden')) {
+      icon.classList.remove('rotate-180');
+    } else {
+      icon.classList.add('rotate-180');
+    }
+  });
+});
